@@ -1,11 +1,11 @@
 class ListUtility {
-    private static void addToListList(list, Object obj) {
-        list.add(obj); // Unchecked warning
+    private static void addToListList(List<String> list, String str) {
+        list.add(str);  // No warning generated
     }
 
     public static void main(String[] args) {
         List<String> list = new ArrayList<String> ();
-        addToList(list, 42);
-        System.out.println(list.get(0)); // Throws ClassCast Exception
+        addToList(list, "42");
+        System.out.println(list.get(0));
     }
 }
