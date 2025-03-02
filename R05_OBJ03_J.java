@@ -1,5 +1,5 @@
 class ListUtility {
-    private static void addToListList list, Object obj) {
+    private static void addToListList(list, Object obj) {
         list.add(obj); // Unchecked warning
     }
 
